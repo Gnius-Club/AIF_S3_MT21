@@ -1,24 +1,277 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-S3-M21</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 21: Proyecto Gemelo Digital - Creación de la Interfaz</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Esta misión se centra en la construcción de la interfaz final del Gemelo Digital, integrando HTML, CSS y JS.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Secuencia y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes diseñen e implementen la interfaz de usuario (UI) final para su Gemelo Digital.</li>
+                                        <li>Que generen y adapten el código HTML/CSS/JS necesario para crear una visualización dinámica y funcional.</li>
+                                        <li>Que integren todos los datos de sus sensores para que la interfaz represente fielmente el estado del sistema físico.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Repaso estratégico de integración Front-End (HTML, CSS, JS).</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM (Show & Tell):</strong> Showcase de proyectos finales, síntesis de "insights" y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un Plugin de ThingSpeak completamente funcional que actúa como Gemelo Digital del sistema físico, mostrando múltiples datos de sensores de forma dinámica y representando el estado del sistema.</li>
+                                        <li>Un prototipo físico y digital integrado y operativo, listo para ser presentado.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de ThingSpeak con canales activos.</li>
+                                        <li>Sistema físico del proyecto final (construido en la misión anterior).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) operativo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-9).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que los sistemas físicos de los estudiantes de la misión anterior estén operativos y enviando datos a ThingSpeak.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar la integración de HTML, CSS y JS. Estar preparado para guiar la depuración de la integración completa (Python -> ThingSpeak -> JS).</li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un Gemelo Digital finalizado y funcional (ej. Alerta de Inundación) para demostrar la interacción completa y el flujo de datos de extremo a extremo.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Establecer el tono de la sesión, activar la IA y presentar la fase final de construcción: la interfaz.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque de la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Buenos días, ingenieros. Tienen un sistema físico robusto y calibrado. Hoy, le daremos su cara digital, su alma. Construirán la interfaz final de su Gemelo Digital, el panel de control que les permitirá monitorear e interactuar con su creación. Hoy, son diseñadores de UI y desarrolladores Front-End.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación y Personalización de Xolo</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo como de costumbre, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo. Soy Ana, perfil Arquitecto de Software, y hoy vamos a construir la interfaz final para nuestro sistema.'</strong> Esto posicionará a Xolo como su equipo de desarrollo Front-End. Procedan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 2 minutos</h2>
+                <p>Clarificar la meta de aprendizaje enfocada en la integración completa del Front-End.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: "I Can Statement" de Integración Final</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">La meta de hoy es la integración total. Al finalizar, podrán afirmar: <strong>'Yo puedo construir una interfaz de usuario funcional para un Gemelo Digital, integrando HTML, CSS y JavaScript para representar fielmente el estado de un sistema físico.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Repaso de Integración Front-End) ⏰ 7 minutos</h2>
+                <p>Facilitar un repaso estratégico sobre cómo HTML, CSS y JavaScript colaboran para crear una experiencia dinámica.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para el Aprendizaje Conceptual</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador dirige a los alumnos para que repasen la analogía del cuerpo humano.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Iniciamos el A.I. GYM con un último repaso estratégico. De forma individual, usen este prompt con Xolo: <strong>'Xolo, recuérdame con la analogía del cuerpo humano cómo se integran HTML, CSS y JavaScript para crear una experiencia dinámica.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Supervisión y Guía del Facilitador</h3>
+                            <p>El facilitador circula, refuerza conceptos y asegura la comprensión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras circula) "Asegúrense de entender el rol de cada lenguaje. El JS es el 'sistema nervioso'. Es el único que puede leer los datos y 'dar la orden' de cambiar el CSS. El HTML y el CSS por sí solos son estáticos. La interacción y el dinamismo provienen del JavaScript."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Desarrollo de la Interfaz Final) ⏰ 25 minutos</h2>
+                <p>Los estudiantes construyen la interfaz completa de su Gemelo Digital, integrando todos los componentes.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
+                             <p>(Proyectar Diapositiva 5) El facilitador presenta el desafío final de construcción y da la instrucción de formar parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Manos al código. Formen sus parejas. Su misión es construir la interfaz completa para su Gemelo Digital, basándose en los diseños que han creado. El objetivo es que la UI refleje el estado de TODOS los sensores de su sistema.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diseño de la "Vibe" de la UI Completa</h3>
+                            <p>(Proyectar Diapositiva 6) Las parejas describen su UI completa a Xolo para generar todo el código necesario.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Describan la 'vibe' de cada componente visual y dinámico a Xolo, sección por sección. Por ejemplo: <strong>'Xolo, para nuestro sistema de alerta de inundación, queremos un indicador de estado general (Seguro/Alerta), una barra para el nivel de agua, otra para la humedad, y un texto que indique si la bomba está ON u OFF. Todo debe actualizarse en tiempo real.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación y Depuración de Integración</h3>
+                             <p>(Proyectar Diapositiva 7 y 8) Las parejas implementan el código completo y depuran la conexión de datos de extremo a extremo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Implementen el código en su Plugin. Su desafío final de depuración es la integración completa. Un error en un placeholder o en un selector de JS puede impedir que una parte de su UI se actualice. Usen la consola metódicamente. Si un componente falla, sigan el flujo de datos: ¿El Micro:bit está enviando el dato a ese 'field'? ¿El placeholder es correcto? ¿La lógica de JS lo está leyendo bien? Describan el problema a Xolo para que los guíe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Show & Tell) ⏰ 5 minutos</h2>
+                <p>El facilitador modera la presentación de los proyectos finales y una reflexión sobre el proceso.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think & Pair)</h3>
+                            <p>(Proyectar Diapositiva 9) Instrucción para la reflexión individual y en pareja.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Bien, para cerrar, nuestro Think-Pair-Share. Individualmente, un minuto para pensar: ¿Qué es lo más poderoso de tener un Gemelo Digital de su sistema? Luego, en parejas, dos minutos para discutir qué otra información o control añadirían a su UI si tuvieran una semana más.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Show & Tell y Síntesis)</h3>
+                            <p>Cada pareja presenta su proyecto final y el facilitador cierra la sesión.</p>
+                        </div>
+                        <div class="collapsible-content">
+                                <p class="dialogue assistant">Llegó el momento del 'Show and Tell'. Cada equipo tendrá un minuto para presentar su proyecto final. Muestren el sistema físico y su Gemelo Digital funcionando en armonía. Expliquen brevemente el propósito y la lógica de su creación. (El facilitador gestiona el tiempo para que varios equipos presenten). <br><br> (Al final) Felicidades, ingenieros. Han completado el ciclo. Han construido un sistema ciber-físico de extremo a extremo y han demostrado dominio sobre el hardware, el software y la conectividad. Esto no es un ejercicio de clase; es un prototipo de producto. Siéntanse orgullosos. En nuestra última sesión, reflexionaremos sobre la responsabilidad que conlleva este poder.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
